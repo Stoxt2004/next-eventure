@@ -13,7 +13,7 @@ const Footer = () => {
           <Image src="/logo.png" alt="logo" width={70} height={20}/> 
         </Link>
         <div>
-          @2024 Eventure. All Rights Reserved. 
+          @2024 Evius. All Rights Reserved. 
         </div>
         <Link href="/sign-up">
         <Button className="bg-gradient-to-r from-purple-400 to-pink-600 text-md hover:scale-105 transition hidden md:block">

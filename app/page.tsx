@@ -63,7 +63,7 @@ export default function Home() {
                 <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                   <TypewriterComponent
                     options={{
-                      strings: "Eventure",
+                      strings: "Evius",
                       autoStart: true,
                       loop: true
                     }}
@@ -85,7 +85,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="flex justify-center p-4 md:p-4">
-            <Image src="/home.png" alt="Eventure Home" width={900} height={20} className="rounded-md"/>
+            <Image src="/home.png" alt="Evius Home" width={900} height={20} className="rounded-md"/>
           </div>
         </div>
         <div id="features">

@@ -16,12 +16,12 @@ const Faq = () => {
         <div className="-mx-4 -ml-12 mt-[60px] flex justify-center flex-wrap lg:mt-20">
           <div className="w-full md:px-4 lg:w-1/2 p-0">
             <SingleFaq
-              question="How to use Eventure?"
-              answer="Eventure will be available soon, as it has not yet been launched. By registering now, you will receive a 50% discount at launch."
+              question="How to use Evius?"
+              answer="Evius will be available soon, as it has not yet been launched. By registering now, you will receive a 50% discount at launch."
             />
             <SingleFaq
               question="Can I share the event design with my clients?"
-              answer="Sure! With Eventure, you can simply share a private link, and your client will be able to see the changes in real-time."
+              answer="Sure! With Evius, you can simply share a private link, and your client will be able to see the changes in real-time."
             />
             <SingleFaq
               question="Is AI integrated into the Pro plan?"

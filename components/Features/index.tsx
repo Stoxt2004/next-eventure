@@ -9,8 +9,8 @@ const Features = () => {
       <div className="container text-white w-[100%] md:w-[80%]">
         <SectionTitle
           subtitle="Features"
-          title="Main Features Of Eventure"
-          paragraph="Eventure is designed to streamline every aspect of event planning and management."
+          title="Main Features Of Evius"
+          paragraph="Evius is designed to streamline every aspect of event planning and management."
         />
 
         <div className=" mt-4 flex flex-wrap lg:mt-8 ">
