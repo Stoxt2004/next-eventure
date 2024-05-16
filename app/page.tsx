@@ -15,10 +15,13 @@ export default function Home() {
     <main>
       <nav className="flex justify-between md:p-4 align-middle items-center p-2">
         <Link href="/">
-        <Image src="/logo.png" alt="Logo" width={50} height={20}/>
+          <div className="flex justify-center items-center " >
+          <Image src="/logo.png" alt="Logo" width={50} height={20}/>
+
+          </div>
 
         </Link>
-        <ul className="flex gap-4 items-center text-white hidden md:block md:flex">
+        <ul className="flex gap-4 items-center text-white hidden md:block md:flex -mr-20">
           <li className="hover:text-violet-400 transition">
             <Link href="/" >
                 Home
@@ -39,7 +42,7 @@ export default function Home() {
         <div className="flex items-center gap-0">
         <Link href="/sign-up">
           <SignedOut>
-          <Button className=" bg-violet-400 pl-9 pr-9 hover:bg-violet-600 mr-3">Join Us</Button>
+          <Button className=" bg-violet-400 pl-9  pr-9 hover:bg-violet-600 mr-3 md:mr-0">Join Us</Button>
 
           </SignedOut>
           <SignedIn>
