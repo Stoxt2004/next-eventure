@@ -52,7 +52,7 @@ const MobileMenu = () => {
         <SignedOut>
         <Link href="/sign-up">
                   <Button className="bg-gradient-to-r from-purple-400 to-pink-600 text-md hover:scale-105 transition">
-                      Register Now
+                      Join Us
                   </Button>
             </Link>
             </SignedOut>
