@@ -3,7 +3,6 @@ import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import Pricing from "@/components/Pricing";
-import { Pricingv2 } from "@/components/pricingv2";
 import { Button } from "@/components/ui/button";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
