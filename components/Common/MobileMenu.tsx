@@ -29,11 +29,6 @@ const MobileMenu = () => {
         <Image src="/logo.png" alt="Logo" width={30} height={20}/>
         <h3 className="text-3xl">Evius</h3>
         </Link>
-        <SignedIn>
-            <div className="pr-8 mt-3">
-            <UserButton/>
-            </div>
-          </SignedIn>
       </SheetTitle>
     
       <div className="grid gap-4 py-4 pl-4 flex-col justify-between">

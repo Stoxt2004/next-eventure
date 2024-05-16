@@ -36,14 +36,14 @@ export default function Home() {
           </li>
         </ul>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-0">
         <Link href="/sign-up">
           <SignedOut>
-          <Button className=" bg-violet-400 pl-9 pr-9 hover:bg-violet-600">Sign Up</Button>
+          <Button className=" bg-violet-400 pl-9 pr-9 hover:bg-violet-600 mr-3">Join Us</Button>
 
           </SignedOut>
           <SignedIn>
-            <div className="pr-8 hidden md:block">
+            <div className="pr-2 mt-2">
             <UserButton/>
             </div>
           </SignedIn>
@@ -58,12 +58,12 @@ export default function Home() {
         <div className="text-white font-bold pt-16 pb-9 text-center space-y-5 justify-center flex flex-col">
           <div className="text-3xl md:text-5xl lg:text-6xl space-y-5 font-extrabold md:px-2">
               <h1>Bored of the old Events Planner?</h1>
-              <div className="flex text-center justify-center gap-4 font-bold flex-col md:flex-row">
-                <h4>Join the Beta of </h4>
-                <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              <div className="flex text-center justify-center items-center gap-4 font-bold flex-col md:flex-row">
+                <h4>Join the Waitlist of </h4>
+                <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-6xl">
                   <TypewriterComponent
                     options={{
-                      strings: "Evius",
+                      strings: "Evius!",
                       autoStart: true,
                       loop: true
                     }}
@@ -80,7 +80,7 @@ export default function Home() {
           <div>
             <Link href="/sign-up">
                   <Button className="bg-gradient-to-r from-purple-400 to-pink-600 text-md hover:scale-105 transition">
-                      Register Now
+                      Join the Waitlist
                   </Button>
             </Link>
           </div>
