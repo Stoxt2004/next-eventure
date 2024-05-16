@@ -1,4 +1,5 @@
 "use client"
+import MobileMenu from "@/components/Common/MobileMenu";
 import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
@@ -14,10 +15,10 @@ export default function Home() {
     <main>
       <nav className="flex justify-between md:p-4 align-middle items-center p-2">
         <Link href="/">
-        <Image src="/logo.png" alt="Logo" width={70} height={20}/>
+        <Image src="/logo.png" alt="Logo" width={50} height={20}/>
 
         </Link>
-        <ul className="flex gap-4 items-center text-white">
+        <ul className="flex gap-4 items-center text-white hidden md:block md:flex">
           <li className="hover:text-violet-400 transition">
             <Link href="/" >
                 Home
@@ -34,17 +35,24 @@ export default function Home() {
             </Link>
           </li>
         </ul>
+
+        <div className="flex items-center gap-4">
         <Link href="/sign-up">
           <SignedOut>
           <Button className=" bg-violet-400 pl-9 pr-9 hover:bg-violet-600">Sign Up</Button>
 
           </SignedOut>
           <SignedIn>
-            <div className="pr-8">
+            <div className="pr-8 hidden md:block">
             <UserButton/>
             </div>
           </SignedIn>
         </Link>
+        <MobileMenu/>
+        </div>
+        
+        
+        
       </nav>
 
         <div className="text-white font-bold pt-16 pb-9 text-center space-y-5 justify-center flex flex-col">
