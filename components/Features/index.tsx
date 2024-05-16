@@ -1,7 +1,5 @@
 import { BrainIcon, CalendarIcon, MailIcon, User2Icon, Users2 } from "lucide-react";
 import SectionTitle from "../Common/SectionTitle";
-import SingleFeature from "./SingleFeature";
-import featuresData from "./featuresData";
 import Image from "next/image";
 
 

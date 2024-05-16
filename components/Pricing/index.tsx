@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import SectionTitle from "../Common/SectionTitle";
-import PricingBox from "./PricingBox";
 import { Button } from "../ui/button";
 import TypewriterComponent from "typewriter-effect";
 
