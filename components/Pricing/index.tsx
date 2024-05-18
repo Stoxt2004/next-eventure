@@ -36,7 +36,7 @@ const Pricing = () => {
         <h2 className="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]">
           <span className="text-xl font-medium">$ </span>
           <span className="-ml-1 -tracking-[2px]">
-            19
+            5,99
           </span>
           <span className="text-base font-normal text-body-color dark:text-dark-6">
             {" "}
@@ -83,7 +83,7 @@ const Pricing = () => {
         <h2 className="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]">
           <span className="text-xl font-medium">$ </span>
           <span className="-ml-1 -tracking-[2px]">
-            39
+            14,99
           </span>
           <span className="text-base font-normal text-body-color dark:text-dark-6">
             {" "}
@@ -127,7 +127,7 @@ const Pricing = () => {
         <h2 className="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]">
           <span className="text-xl font-medium">$ </span>
           <span className="-ml-1 -tracking-[2px]">
-            59
+            29,99
           </span>
           <span className="text-base font-normal text-body-color dark:text-dark-6">
             {" "}
