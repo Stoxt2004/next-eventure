@@ -33,7 +33,7 @@ const Pricing = () => {
         <span className="mb-5 block text-xl font-medium text-dark dark:text-white">
           
         </span>
-        <h2 className="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]">
+        <h2 className=" text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]">
           <span className="text-xl font-medium">$ </span>
           <span className="-ml-1 -tracking-[2px]">
             5,99
@@ -43,6 +43,8 @@ const Pricing = () => {
             Per Month
           </span>
         </h2>
+        <h2 className="text-black mb-11 text-zinc-500">7 Days Free Trial</h2>
+
 
         <div className="mb-[50px]">
           <h3 className="mb-5 text-lg font-medium text-dark dark:text-white">
@@ -53,16 +55,16 @@ const Pricing = () => {
               <li>Event Creation & Management</li>
               <li>Drag-and-Drop Event Setup</li>
               <li>Guest List Management</li>
-              <li>Basic Email Notifications</li>
+              <li>Email Notifications</li>
               <li>Calendar Integration</li>
               <li>Standard Support</li>
 
             </ul>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full flex justify-center">
           <Link href="/sign-up">
-                  <Button className="bg-gradient-to-r from-purple-400 to-pink-600 text-md hover:scale-105 transition">
+                  <Button className="bg-gradient-to-r from-purple-400 to-pink-600 text-md hover:scale-105 transition text-lg p-6">
                       Subscribe
                   </Button>
             </Link>
@@ -80,7 +82,7 @@ const Pricing = () => {
         <span className="mb-5 block text-xl font-medium text-dark dark:text-white">
           
         </span>
-        <h2 className="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]">
+        <h2 className=" text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]">
           <span className="text-xl font-medium">$ </span>
           <span className="-ml-1 -tracking-[2px]">
             14,99
@@ -90,6 +92,8 @@ const Pricing = () => {
             Per Month
           </span>
         </h2>
+        <h2 className="text-black mb-11 text-zinc-500">7 Days Free Trial</h2>
+
 
         <div className="mb-[50px]">
           <h3 className="mb-5 text-lg font-medium text-dark dark:text-white">
@@ -105,9 +109,9 @@ const Pricing = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full flex justify-center">
           <Link href="/sign-up">
-                  <Button className="bg-gradient-to-r from-purple-400 to-pink-600 text-md hover:scale-105 transition">
+                  <Button className="bg-gradient-to-r from-purple-400 to-pink-600 text-md hover:scale-105 transition text-lg p-6">
                       Subscribe
                   </Button>
             </Link>
@@ -115,16 +119,16 @@ const Pricing = () => {
       </div>
     </div>
 
-    <div className="w-full px-4 md:w-1/2 lg:w-1/3">
+    <div className="w-full px-4 md:w-1/2 lg:w-1/3 ">
       <div
-        className="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-[0px_0px_40px_0px_rgba(0,0,0,0.08)] dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
+        className="relative z-10 mb-10 overflow-hidden rounded-xl bg-gradient-to-r from-purple-700 to-pink-600 px-8 py-10 sm:p-12 lg:px-6 lg:py-10 xl:p-14 text-white"
         data-wow-delay=".1s"
       >
         Premium Plan
         <span className="mb-5 block text-xl font-medium text-dark dark:text-white">
           
         </span>
-        <h2 className="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]">
+        <h2 className=" text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]">
           <span className="text-xl font-medium">$ </span>
           <span className="-ml-1 -tracking-[2px]">
             29,99
@@ -134,13 +138,14 @@ const Pricing = () => {
             Per Month
           </span>
         </h2>
+        <h2 className="text-black mb-11 text-zinc-200">7 Days Free Trial</h2>
 
         <div className="mb-[50px]">
           <h3 className="mb-5 text-lg font-medium text-dark dark:text-white">
             Features
           </h3>
           <div className="mb-10">
-            <ul className=" text-zinc-500 h-40 list-disc">
+            <ul className=" text-zinc-200 h-40 list-disc">
               <li>All Pro Plan Features</li>
               <li>AI Integration for Event Recommendations</li>
               <li>Social Media Integration & Promotion Tools</li>
@@ -149,10 +154,10 @@ const Pricing = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full flex justify-center">
           <Link href="/sign-up">
-                  <Button className="bg-gradient-to-r from-purple-400 to-pink-600 text-md hover:scale-105 transition">
-                      Subscribe
+                  <Button className="bg-white to-pink-600 text-md hover:scale-105 transition hover:bg-white p-6">
+                      <p className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-lg">Subscribe</p>
                   </Button>
             </Link>
         </div>
@@ -161,17 +166,20 @@ const Pricing = () => {
         </div>
           <div className="w-full flex flex-col md:flex-row justify-center">
             <h4 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl space-y-5 font-extrabold  md:flex-row">
-              Sign Up Now and Receive 
+              Sign Up Now to get 
               <div className=" text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               <TypewriterComponent
                     options={{
-                      strings: " 50% Off",
+                      strings: [
+                        "50% Off!",
+                        "Unlimited Access!",
+                        "Started Planning Today!"
+                      ],
                       autoStart: true,
                       loop: true
                     }}
                   />
                 </div>
-                at Launch!
                 </h4>
           </div>
       </div>

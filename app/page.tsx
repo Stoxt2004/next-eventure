@@ -57,18 +57,25 @@ export default function Home() {
 
         <div className="text-white font-bold pt-16 pb-9 text-center space-y-5 justify-center flex flex-col">
           <div className="text-3xl md:text-5xl lg:text-6xl space-y-5 font-extrabold md:px-2">
-              <h1>Bored of the old Events Planner?</h1>
+              <h1>Searching a new way to Plan Events?</h1>
               <div className="flex text-center justify-center items-center gap-4 font-bold flex-col md:flex-row">
-                <h4>Join the Waitlist of </h4>
-                <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-6xl">
+                <h4 className="">Evius can help you 
+
+                <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-5xl">
                   <TypewriterComponent
                     options={{
-                      strings: "Evius!",
+                      strings: [
+                        "Plan Events",
+                        "Organize Seating",
+                        "Manage Guest Lists"
+                      ],
                       autoStart: true,
                       loop: true
                     }}
                   />
                 </h4>
+                </h4>
+                
               </div>
           </div>
 
@@ -80,7 +87,7 @@ export default function Home() {
           <div>
             <Link href="/sign-up">
                   <Button className="bg-gradient-to-r from-purple-400 to-pink-600 text-md hover:scale-105 transition">
-                      Join the Waitlist
+                      Sign Up for Early Access
                   </Button>
             </Link>
           </div>

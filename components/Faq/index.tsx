@@ -16,7 +16,7 @@ const Faq = () => {
         <div className="-mx-4 -ml-12 mt-[60px] flex justify-center flex-wrap lg:mt-20">
           <div className="w-full md:px-4 lg:w-1/2 p-0">
             <SingleFaq
-              question="How to use Evius?"
+              question="Is Evius available to the public yet?"
               answer="Evius will be available soon, as it has not yet been launched. By registering now, you will receive a 50% discount at launch."
             />
             <SingleFaq
