@@ -21,7 +21,7 @@ export default function Home() {
           </div>
 
         </Link>
-        <ul className="flex gap-4 items-center text-white hidden md:block md:flex -ml-14">
+        <ul className="flex gap-4 items-center text-white hidden md:block md:flex">
           <li className="hover:text-violet-400 transition">
             <Link href="/" >
                 Home
@@ -61,7 +61,7 @@ export default function Home() {
               <div className="flex text-center justify-center items-center gap-4 font-bold flex-col md:flex-row">
                 <h4 className="">Evius can help you 
 
-                <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-5xl">
+                <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-5xl pb-3">
                   <TypewriterComponent
                     options={{
                       strings: [

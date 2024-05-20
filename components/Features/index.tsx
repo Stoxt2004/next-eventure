@@ -1,6 +1,15 @@
 import { BrainIcon, CalendarIcon, MailIcon, User2Icon, Users2 } from "lucide-react";
 import SectionTitle from "../Common/SectionTitle";
 import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { Card, CardContent } from "../ui/card";
+
 
 
 const Features = () => {
@@ -12,6 +21,7 @@ const Features = () => {
           title="Main Features Of Evius"
           paragraph="Evius is designed to streamline every aspect of event planning and management."
         />
+
 
         <div className=" mt-4 flex flex-wrap lg:mt-8 ">
         <div className="w-full px-4 md:w-[48%] lg:w-[23%] bg-violet-200/50 mx-1 rounded-md mb-6 md:mb-0 md:mt-3">
@@ -74,29 +84,77 @@ const Features = () => {
         <div className="text-4xl font-bold pt-10 md:pt-16">
           <h4 className="mb-4 text-3xl font-bold sm:text-4xl md:text-[40px] md:leading-[1.2]">Special Feature: <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Drag-and-Drop</span> Event Setup</h4>
           <p className="pt-2 text-lg md:text-lg font-light text-zinc-400 ">The Drag-and-Drop Event Setup feature is designed to provide a seamless and intuitive way to plan and organize your event layout. Here’s what you can do with this powerful tool:</p>
-          <div className="flex flex-col-reverse lg:flex-row gap-4 mt-3 bg-violet-200/50 p-6 rounded-lg">
-            <ul className="md:pl-10 md:p-6 rounded-md md:list-disc flex flex-col lg:w-2/4">
-            <li className="md:pb-1 pb-4">
-              <h4 className="text-[20px] ">Visual Event Layout</h4>
-              <p className="text-[16px] font-normal">Easily arrange and visualize seating, stage, microphones, and other equipment.</p>
-            </li>
-            <li className="pb-1 pb-4">
-              <h4 className="text-[20px]">Customizable Layouts</h4>
-              <p className="text-[16px] font-normal">Save and reuse event layouts.</p>
-            </li>
-            <li className="pb-1 pb-4">
-              <h4 className="text-[20px]">Real-time Collaboration</h4>
-              <p className="text-[16px] font-normal">Collaborate with team members on the layout in real-time.</p>
-            </li>
-            <li className="pb-1 pb-4">
-              <h4 className="text-[20px]">Inventory Management</h4>
-              <p className="text-[16px] font-normal">Track and manage event equipment and resources.</p>
-            </li>
-            <li className="pb-1 pb-4">
-              <h4 className="text-[20px]">Interactive Previews</h4>
-              <p className="text-[16px] font-normal">Generate interactive previews to share with clients and stakeholders.</p>
-            </li>
-          </ul>
+          <div className="flex flex-col-reverse lg:flex-row gap-4 mt-3 p-6 rounded-lg">
+            <div className="w-full flex justify-start">
+            <Carousel className="w-full max-w-md">
+              <CarouselContent className="">
+                  <CarouselItem>
+                    <div className="p-1">
+                      <Card className=" bg-violet-200/50 border-none">
+                        <CardContent className="flex aspect-square items-center justify-center p-6">
+                          <span className="text-4xl font-semibold text-white">
+                          <h4 className="text-[20px] ">Visual Event Layout</h4>
+              <p className="text-[16px] font-normal">Effortlessly arrange and visually map out seating, stage, microphones, and other necessary equipment for any event, ensuring optimal organization and smooth execution.</p>
+                          </span>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="p-1">
+                    <Card className=" bg-violet-200/50 border-none">
+                        <CardContent className="flex aspect-square items-center justify-center p-6">
+                          <span className="text-4xl font-semibold text-white">
+                             <h4 className="text-[20px]">Customizable Layouts</h4>
+                             <p className="text-[16px] font-normal">Save and easily reuse event layouts for future occasions, simplifying the planning process and ensuring consistency and efficiency across multiple events.</p>
+                          </span>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="p-1">
+                    <Card className=" bg-violet-200/50 border-none">
+                        <CardContent className="flex aspect-square items-center justify-center p-6">
+                          <span className="text-4xl font-semibold text-white">
+                          <h4 className="text-[20px]">Real-time Collaboration</h4>
+              <p className="text-[16px] font-normal">Collaborate seamlessly with team members on the layout in real-time, allowing for instant feedback, updates, and adjustments to ensure the final setup meets everyone's needs and expectations.</p>
+                          </span>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="p-1">
+                    <Card className=" bg-violet-200/50 border-none">
+                        <CardContent className="flex aspect-square items-center justify-center p-6">
+                          <span className="text-4xl font-semibold text-white">
+                          <h4 className="text-[20px]">Inventory Management</h4>
+              <p className="text-[16px] font-normal">Track and efficiently manage all event equipment and resources, ensuring everything is accounted for and optimally utilized, reducing the risk of last-minute issues and enhancing overall event coordination.</p>
+                          </span>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="p-1">
+                    <Card className=" bg-violet-200/50 border-none">
+                        <CardContent className="flex aspect-square items-center justify-center p-6">
+                          <span className="text-4xl font-semibold text-white">
+                          <h4 className="text-[20px]">Interactive Previews</h4>
+              <p className="text-[16px] font-normal">Generate detailed and interactive previews to share with clients, allowing them to visualize the event setup, provide feedback, and make informed decisions, ultimately enhancing client satisfaction and engagement.</p>
+                          </span>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="bg-violet-200/50 border-none"/>
+              <CarouselNext className="bg-violet-200/50 border-none"/>
+            </Carousel>
+            </div>
+          
+           
           <div className="flex justify-center p-4 md:p-4 md:w-[500px] w-[260px]">
             <img src="/drag.png" alt="Logo" className=" object-contain"/>
           </div>

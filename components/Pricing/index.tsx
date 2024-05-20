@@ -167,7 +167,7 @@ const Pricing = () => {
           <div className="w-full flex flex-col md:flex-row justify-center">
             <h4 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl space-y-5 font-extrabold  md:flex-row">
               Sign Up Now to get 
-              <div className=" text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              <div className=" text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 pb-8">
               <TypewriterComponent
                     options={{
                       strings: [

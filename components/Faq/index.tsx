@@ -1,5 +1,12 @@
 import SectionTitle from "../Common/SectionTitle";
 import SingleFaq from "./SingleFaq";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
 
 const Faq = () => {
   return (
@@ -14,19 +21,44 @@ const Faq = () => {
         />
 
         <div className="-mx-4 -ml-12 mt-[60px] flex justify-center flex-wrap lg:mt-20">
-          <div className="w-full md:px-4 lg:w-1/2 p-0">
-            <SingleFaq
-              question="Is Evius available to the public yet?"
-              answer="Evius will be available soon, as it has not yet been launched. By registering now, you will receive a 50% discount at launch."
-            />
-            <SingleFaq
-              question="Can I share the event design with my clients?"
-              answer="Sure! With Evius, you can simply share a private link, and your client will be able to see the changes in real-time."
-            />
-            <SingleFaq
-              question="Is AI integrated into the Pro plan?"
-              answer="No, it's available only in the Premium plan."
-            />
+          <div className="w-[70%] md:px-4 lg:w-1/2 p-0">
+                    <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="item-1">
+                  <AccordionTrigger className=" font-bold text-xl">Is Evius available to the public yet?</AccordionTrigger>
+                  <AccordionContent className="text-lg">
+                  Evius will be available soon, as it has not yet been launched. By registering now, you will receive a 50% discount at launch.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-2">
+                  <AccordionTrigger className=" font-bold text-xl">Can I share the event design with my clients?</AccordionTrigger>
+                  <AccordionContent className="text-lg">
+                  Sure! With Evius, you can simply share a private link, and your client will be able to see the changes in real-time.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3">
+                  <AccordionTrigger className=" font-bold text-xl">What specific aspects of event planning and management does Evius streamline?</AccordionTrigger>
+                  <AccordionContent className="text-lg">
+                  Evius is designed to streamline every aspect of event planning and management, including event creation, organization, guest list management, and communication with attendees.
+                  </AccordionContent>
+                  
+                </AccordionItem>
+                <AccordionItem value="item-4">
+                  <AccordionTrigger className=" font-bold text-xl">How does Evius utilize artificial intelligence (AI) in event planning and management?</AccordionTrigger>
+                  <AccordionContent className="text-lg">
+                  Evius leverages artificial intelligence to analyze data and provide users with smart recommendations for optimizing various aspects of event planning and management, such as venue selection, scheduling, and budgeting.
+                  </AccordionContent>
+                  
+                </AccordionItem>
+                <AccordionItem value="item-5">
+                  <AccordionTrigger className=" font-bold text-xl">Could you explain more about the Drag-and-Drop Event Setup feature and its functionalities?</AccordionTrigger>
+                  <AccordionContent className="text-lg">
+                  The Drag-and-Drop Event Setup feature in Evius provides users with an intuitive interface to easily plan and organize their event layout. Users can drag and drop elements such as seating arrangements, booths, stages, and other components to create a customized layout tailored to their specific event needs.
+                  </AccordionContent>
+                  
+                </AccordionItem>
+              </Accordion>
+            
+            
           </div>
         </div>
       </div>
