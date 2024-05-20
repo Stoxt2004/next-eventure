@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["500", "700", "900"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <Analytics/>
+      <SpeedInsights/>
     <html lang="en" className=" bg-[#222439]" style={{scrollBehavior:'smooth'}}>
       <body className={poppins.className}>{children}</body>
     </html>
